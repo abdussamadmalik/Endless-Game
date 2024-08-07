@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insect Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="screen">
+        <h1>Catch The Insect </h1>
+        <button class="btn" id="btn-start">
+            Play Game
+        </button>
+    </div>
+    <div class="screen">
+        <h1> Choose Your Favorite Insect</h1>
+        <ul class="insects-list">
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Mosquito</p>
+                    <img src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png" alt="Fly">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>spider</p>
+                    <img src="http://pngimg.com/uploads/spider/spider_PNG12.png" alt="Fly">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Ant</p>
+                    <img src="https://pngimg.com/uploads/ant/ant_PNG19335.png" alt="">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>BUtter Fly</p>
+                    <img src="https://pngimg.com/uploads/butterfly/butterfly_PNG1008.png" alt="Fly">
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div id="game-container" class="screen game-container">
+        <h3 id="time" class="time">Time: 00:00</h3>
+        <h3 id="score" class="score">Score: 0</h3>
+        <button id="btn-stop" class="btn-stop">Stop Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

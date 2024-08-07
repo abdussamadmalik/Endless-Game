@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #516dff;
+    color: #fff;
+    font-family: 'press start 2P', cursive;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+}
+a{
+    color: #fff;
+}
+h1{
+    line-height: 1.4;
+}
+.btn{
+    border:0;
+    color: #516dff;
+    background-color: #fff;
+    padding: 15px 20px;
+    font-family: inherit;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.btn:active{
+    outline: 0;
+    scale: 0.95;
+}
+.screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.5s ease-out;
+}
+.screen.up{
+    margin-top: -100vh;
+}
+.insects-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-items: center;
+    padding: 0;
+    
+}
+.insects-list li{
+    margin: 15px;
+}
+.choose-insect-btn{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-family: inherit;
+    width: 150px;
+    height: 150px;
+}
+
+.choose-insect-btn:hover{
+    color: #516dff;
+    background-color: #fff;
+}
+.choose-insect-btn:active{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.choose-insect-btn img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+.game-container{
+    position: relative;
+}
+.time , .score{
+position: absolute;
+top: 20px;
+}
+.time{
+    left: 20px;
+}
+.score{
+    align-items: center;
+}
+.insect{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 0.3s ease-in-out;
+   
+}
+.insect.cought{
+    transform: translate(-50%,-50%) scale(0);
+
+}
+.insect img{
+    height: 100px;
+    width: 100px;
+}
+.btn-stop {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 0;
+    color: #516dff;
+    background-color: #fff;
+    padding: 10px 15px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn-stop:hover {
+    opacity: 0.8;
+}
+
+.btn-stop:active {
+    outline: 0;
+    transform: scale(0.95);
+}
